@@ -30,6 +30,11 @@ img{
     width: 210px;
 }
 /* レイアウト */
+.wrapper {
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 1.5rem;
+}
 .align-center {
     text-align: center;
 }
@@ -38,6 +43,7 @@ img{
 .font-english {
     font-family: 'Philosopher', sans-serif;
     font-weight: normal;
+    text-align: center;
 }
 
 /* ヘッダー ----------------------------- */
@@ -68,19 +74,120 @@ img{
 .font-english {
     font-family: 'Philosopher', sans-serif;
     font-weight: normal;
+    text-align: center;
 }
 
-.page-title {
-    font-size: 3rem;
-    text-align: center;
+.page-title{
     margin-top: 2rem;
     line-height: 1.4;
 }
-.cover {
+.page-title,
+.heading-large{
+    font-size: 3rem;
+    text-align: center;
+    
+}
+.heading-large{
+    margin-bottom: 1rem;
+}
+.cover{
     background-size: cover;
     background-position: center bottom;
     height: 800px;
 }
+.cover-home{
+    background-image: url(../images/images/cover-home-s.webp);
+}
+.about{
+    max-width: 736px;
+    padding: 0 1.5rem;
+    margin: 3rem auto 4rem;
+}
+.about p{
+    margin-bottom: 3rem;
+}
+/*ボタン*/
+.btn{
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #0bd;
+    color: #fff;
+    border-radius: 8px;
+    padding: .75rem 1.5rem;
+    transition: .5s;
+}
+.btn:hover{
+    scale: 1.2;
+}
+.btn:hover{
+    background-color: #0090aa;
+}
+/* フッター
+-----------------------------*/
+.page-footer{
+   background-image: url(../images/images/footer-s.webp); 
+    background-size:cover ;
+    background-position:center ;
+    padding-top:12rem ;
+}
+.info {
+    width: 100%;
+    max-width: 544px ;
+    margin:auto ;
+    padding:0 1.5rem;
+    border-spacing:0 ;
+}
+.info th,
+.info td {
+    border-bottom:1px solid #c9c2bc;
+}
+.info th {
+    text-align:left ;
+    font-weight:normal ;
+    padding:1rem ;
+}
+.info td {
+    padding:1rem 0 ;
+}
+.copyright {
+    background-color:#432 ;
+    text-align:center ;
+    padding:2rem 0 ;
+    margin-top:6rem ;
+    color:#fff ;
+}
+/* デスクトップ版
+---------------------------*/
+@media (min-width:800px) {
+    /* 見出し */
+    .page-title {
+        font-size: 5rem;
+    }
+    .heading-large{
+        font-size: 4rem;
+    }
+    /*　ヘッダー　*/
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+    .main-nav {
+        font-size: 2rem;
+    }
+}
+/* HOME */
 .cover-home {
-    background-image: url(../images/cover-home-s.webp);
+    background-image: url(../images/images/cover-home-l.webp);
+}
+.about {
+    margin: 4rem auto 0;
+}
+/*　フッター */
+.page-footer {
+    background-image: url(../images/images/footer-l.webp);
+    padding-top: 12rem;
+}
+.info th {
+    padding-left: 2.5rem;
 }
